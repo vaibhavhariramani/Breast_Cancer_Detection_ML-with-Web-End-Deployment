@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cancer Prediction by Vaibhav Hariramani</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon1.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <style>
+  	body {background-image: url('static/images/1444.jpg');    background-repeat: no-repeat; background-attachment: fixed; background-size:cover;}
+  </style>
+</head>
+<body text="black">
+	<div class="login">
+		<!--Get input for predict the cancer-->
+		<center>
+			<form action="{{ url_for('predict')}}"method="post">
+				<h1>BREAST CANCER PREDICTION USING MACHINE LEARNING</h1><h2>END TO END DEPLOYMENT USING Xgboost classifier</h2><h2>       ENTER FIELDS</h2>
+				<input type="text" name="mean_radius" placeholder="mean radius" required="required" />
+				<input type="text" name="mean_texture" placeholder="mean texture" required="required" />
+				<input type="text" name="mean_perimeter" placeholder="mean perimeter" required="required" />
+				<input type="text" name="mean_area" placeholder="mean area" required="required" />
+				<input type="text" name="mean_smoothness" placeholder="mean smoothness" required="required" />
+				<input type="text" name="mean compactness" placeholder="mean compactness" required="required" />
+				<br>
+				<input type="text" name="mean_concavity" placeholder="mean concavity" required="required" />
+				<input type="text" name="mean_concave_points" placeholder="mean concave points" required="required" />
+				<input type="text" name="mean_symmetry" placeholder="mean symmetry" required="required" />
+				<input type="text" name="mean_fractal_dimension" placeholder="mean fractal dimension" required="required" />
+				<input type="text" name="radius_error" placeholder="radius error" required="required" />
+				<input type="text" name="texture_error" placeholder="texture error" required="required" />
+				<br>
+				<input type="text" name="perimeter_error" placeholder="perimeter error" required="required" />
+				<input type="text" name="area_error" placeholder="area error" required="required" />
+				<input type="text" name="smoothness_error" placeholder="smoothness error" required="required" />
+				<input type="text" name="compactness_error" placeholder="compactness error" required="required" />
+				<input type="text" name="concavity_error" placeholder="concavity error" required="required" />
+				<input type="text" name="concave_points_error" placeholder="concave points error" required="required" />
+				<br>
+				<input type="text" name="symmetry_error" placeholder="symmetry error" required="required" />
+				<input type="text" name="fractal_dimension_error" placeholder="fractal dimension error" required="required" />
+				<input type="text" name="worst_radius" placeholder="worst radius" required="required" />
+				<input type="text" name="worst_texture" placeholder="worst texture" required="required" />
+				<input type="text" name="worst_perimeter" placeholder="worst perimeter" required="required" />
+				<input type="text" name="worst_area" placeholder="worst area" required="required" />
+				<br>
+
+				<input type="text" name="worst_smoothness" placeholder="worst smoothness" required="required" />
+				<input type="text" name="worst_compactness" placeholder="worst compactness" required="required" />
+				<input type="text" name="worst_concavity" placeholder="worst concavity" required="required" />
+				<input type="text" name="worst_concave_points" placeholder="worst concave points" required="required" />
+				<input type="text" name="worst_symmetry" placeholder="worst symmetry" required="required" />
+				<input type="text" name="worst_fractal_dimension" placeholder="worst fractal dimension" required="required" />
+				<br>
+
+				<!-- show button-->
+				<div class="button_cont" align="center"><a class="button_css">
+					<button text="blue" type="submit" class="btn btn-primary btn-block btn-large"><strong><h4>CLICK HERE TO REDICT </h4>h4></strong>
+						<h4 style="color:Tomato;">Malignant(1)</h4>
+						<h4 style="color:DodgerBlue;">Benign(0)</h4>
+					</button></a>
+				</div>
+			</form>
+		</center> <!--Show predicted output using ML model-->
+		<div>
+			<center>
+				<h1>{{ prediction_text}}</h1>
+				<h2>
+					<p><a href="https://www.cancer.net/cancer.net/cancer-types/breast-cancer/types-treatment"> CANCER.NET</a></p>
+				</h2>
+				<h2>BY VAIBHAV HARIRAMANI</h2>
+			<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+				.fa{
+					padding: 20px; font-size: 30px; width: 30px; text-align: top; text-decoration: none; border-radius: 15%; margin: 5px 2px;}
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<style>
+					.fa:hover { opacity: 100; }
+					.fa-facebook {background: #000000;color:blue;}
+					.fa-github {background: #000000;color:red;}
+					.fa-linkedin {background: #000000;color:blue;}
+					.fa-instagram {background: #000000;color: #c13584;}
+					</style>
+				</head>
+				<body>
+					<center>
+						<!-- Add font awesome icons-->
+						<a href="https://www.linkedin.com/in/vaibhav-hariramani-087488186/" class="fa fa-linkedin"></a>
+						<a href="https://github.com/vaibhavhariaramani" class="fa fa-github"></a>
+						<a href="https://www.facebook.com/jayesh.hariramani.3" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/geeky_bawa_/?hl=en" class="fa fa-instagram"></a>
+
+					</center>
+				</head>
+			
+		</ul>
+		</body>
+		</center>
+	</div 
+	</html>
