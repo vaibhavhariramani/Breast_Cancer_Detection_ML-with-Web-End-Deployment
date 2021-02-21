@@ -6,6 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Cancer Prediction by Vaibhav Hariramani</title>
   <meta content="" name="descriptison">
@@ -18,16 +21,21 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- <style>
-  	body {background-image: url('static/images/1444.jpg');    background-repeat: no-repeat; background-attachment: fixed; background-size:cover;}
-  </style> -->
+  <style>
+  	body {background-image: url('assets/img/world.jpg');    background-repeat: no-repeat; background-attachment: fixed; background-size:cover;}
+  </style>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body text="black">
+	
+	
 	<div class="login">
 		<!--Get input for predict the cancer-->
 		<center>
 			<form action="{{ url_for('predict')}}"method="post">
-				<h1>BREAST CANCER PREDICTION USING MACHINE LEARNING</h1><h2>END TO END DEPLOYMENT USING Xgboost classifier</h2><h2>       ENTER FIELDS</h2>
+				<h1>BREAST CANCER PREDICTION USING XGBOOST CLASSIFIER </h1><h2>END TO END DEPLOYMENT OF MACHINE LEARNING USING Xgboost classifier</h2><h2>       ENTER FIELDS</h2>
 				<input type="text" name="mean_radius" placeholder="mean radius" required="required" />
 				<input type="text" name="mean_texture" placeholder="mean texture" required="required" />
 				<input type="text" name="mean_perimeter" placeholder="mean perimeter" required="required" />
@@ -67,7 +75,7 @@
 
 				<!-- show button-->
 				<div class="button_cont" align="center"><a class="button_css">
-					<button text="blue" type="submit" class="btn btn-primary btn-block btn-large"><strong><h4>CLICK HERE TO REDICT </h4>h4></strong>
+					<button text="blue" type="submit" class="btn btn-primary btn-block btn-large"><strong><h4>CLICK HERE TO PREDICT </h4></strong>
 						<h4 style="color:Tomato;">Malignant(1)</h4>
 						<h4 style="color:DodgerBlue;">Benign(0)</h4>
 					</button></a>
@@ -78,7 +86,7 @@
 			<center>
 				<h1>{{ prediction_text}}</h1>
 				<h2>
-					<p><a href="https://www.cancer.net/cancer.net/cancer-types/breast-cancer/types-treatment"> CANCER.NET</a></p>
+					<p>Dataset used:<a href="https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)" style="color: #8ebf42"> CANCER.NET</a></p>
 				</h2>
 				<h2>BY VAIBHAV HARIRAMANI</h2>
 			<head>
@@ -87,20 +95,23 @@
 			<style>
 				.fa{
 					padding: 20px; font-size: 30px; width: 30px; text-align: top; text-decoration: none; border-radius: 15%; margin: 5px 2px;}
-					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+					<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 					<style>
 					.fa:hover { opacity: 100; }
 					.fa-facebook {background: #000000;color:blue;}
 					.fa-github {background: #000000;color:red;}
 					.fa-linkedin {background: #000000;color:blue;}
+					.fa-grav {background: #000000;color:aqua;}
 					.fa-instagram {background: #000000;color: #c13584;}
 					</style>
+					
 				</head>
 				<body>
 					<center>
 						<!-- Add font awesome icons-->
 						<a href="https://www.linkedin.com/in/vaibhav-hariramani-087488186/" class="fa fa-linkedin"></a>
 						<a href="https://github.com/vaibhavhariaramani" class="fa fa-github"></a>
+						<a href="https://vaibhavhariaramani.github.io/" class="fa fa-grav"></a>
 						<a href="https://www.facebook.com/jayesh.hariramani.3" class="fa fa-facebook"></a>
 						<a href="https://www.instagram.com/geeky_bawa_/?hl=en" class="fa fa-instagram"></a>
 
@@ -108,7 +119,74 @@
 				</head>
 			
 		</ul>
-		</body>
+		
 		</center>
-	</div 
+	</div >
+	<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>Made with ❤️by <a href="https://www.linkedin.com/in/vaibhav-hariramani-087488186/" style="color:blue;"><span>Vaibhav Hariramani</a>&nbsp;</span></h3>
+ 
+		<p class="footer-links">
+		<a href="https://vaibhavhariaramani.github.io/">Portfolio</a>
+	·
+		<a href="https://vaibhavhariaramani.github.io/blogs/">Blog</a>
+	·
+		<a href="https://github.com/vaibhavhariaramani/Machine-Learning-Projects-and-Tutorials">OTHER ML MODEL</a>
+	·
+		<a href="https://medium.com/geeky-bawa">MEDIUM</a>
+	·
+		<a href="https://github.com/vaibhavhariaramani/Computer-Vision-Tutorial">Computer vision</a>
+	·
+		<a href="https://sales-predictionapi.herokuapp.com/">Sales Prediction</a>
+		</p>
+ 
+		<p class="footer-company-name"><a href="https://github.com/vaibhavhariaramani"><span> geekybawa</span></a> &copy; 2021</p>
+		</div>
+ 
+		<div class="footer-center">
+			<h3 class="white-text">Get Connect with us</h3>
+          <a class="white-text" href="https://www.linkedin.com/in/vaibhav-hariramani-087488186/"><i class="fa fa-linkedin fa-lg">&nbsp;</i></a> <a class="white-text" href="https://www.youtube.com/channel/UCy7amUpLnsRLEMIaJGGBYog"><i class="fa fa-youtube fa-1x">&nbsp;</i></a> <a class="white-text" href="https://github.com/vaibhavhariaramani"><i class="fa fa-github" style="font-size:36px"></i></a> <a class="white-text" href="https://www.instagram.com/geeky_bawa_/"><i class="fa fa-instagram fa-2x">&nbsp;</i></a></li>
+          </ul>
+		<div>
+			
+		
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+91 77909 91077</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:vaibhav.hariramani01@company.com">vaibhavhariaramani01@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>About Myself</span>
+		<h4 style="color:white;">I'm vaibhav Hariramani a M.L. enthusiast. I create blogs and open source projects about <b>Machine Learning</b>, <b>Computer Vision</b> and <b>
+			App Development</b>.</h4>
+			<br><h4>I have a keen interest in Image processing and Andriod development. You can see a full list of projects what I am up to on <a href="https://sites.google.com/view/geeky-traveller/"><b>Geeky-Traveller</b></a>.
+			 </h4>
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-github"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+	</body>
 	</html>
