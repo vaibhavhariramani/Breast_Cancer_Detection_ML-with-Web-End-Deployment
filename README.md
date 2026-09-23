@@ -78,9 +78,12 @@ if you use this repo in  your project don't forget to mention us as Contributer 
 # Made with ❤️by Vaibhav Hariramani
 #### About me
 
-I am a Machine Learning enthusiast, an Actions on Google Developer, Internet of things, Alexa Skills, and Image processing developer.
-I have a keen interest in Image processing and Andriod development.
-I am Currently studying at  Chandigarh University, Punjab.
+I’ve always been the kind of developer who learns by building.
+What started with IoT, Android, machine learning, and computer vision gradually turned into a career around cloud infrastructure, DevOps, SRE, distributed systems, and AI.
+Today I spend most of my time designing and automating cloud systems, working with Kubernetes, Terraform, AWS, Azure, CI/CD, observability, and Python — but I still make time for the kind of projects that started everything: building random ideas just to see if I can.
+I’ve worked at Jaguar Land Rover, Avaya, 42Gears, and OneWorld, and completed my MSc in Computer Science at University College Dublin.
+Some repositories here are polished projects. Others are experiments, old ideas, or things I built simply because I was curious.
+That’s probably the best description of me as a developer: curious enough to build it, and stubborn enough to figure out how it works.
 
 [My PortFolio](https://vaibhavhariaramani.github.io/)
 You can find me at:-
